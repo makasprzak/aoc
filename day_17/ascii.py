@@ -78,12 +78,18 @@ def part_two():
     r_map, remaining = find_optimal_ngrams(ngram_list, whole_path)
 
     print(r_map)
-    print(remaining)
+    print("A,B,A,A,B,C,B,C,C,B")
     program[0] = 2
-    robot_input = list(map(ord, remaining))
-    robot_input = robot_input[0:19]
+    orig_robot_input = list(map(ord, remaining))
+    intcode = StatefulIntcode(program, [], debug=False)
+    robot_input = orig_robot_input[0:19]
     robot_input.append(10)
-    intcode = StatefulIntcode(program, robot_input)
+    run_robot(intcode, r_map, robot_input)
+
+
+
+def run_robot(intcode, r_map, robot_input):
+    intcode.cin += robot_input
     intcode.run_and_print()
     for k in range(65, 68):
         robot_input = list(map(ord, r_map[k]))
@@ -96,12 +102,12 @@ def part_two():
 
 def find_optimal_ngrams(origin_ngram_list, origin_whole_path, do_print=False):
     origin_ngram_list.sort(key=lambda l: l[1] * len(l[0]), reverse=True)
-    origin_ngram_list = list(filter(lambda l: len(l[0]) > 10, origin_ngram_list))
+    # origin_ngram_list = list(filter(lambda l: len(l[0]) > 10, origin_ngram_list))
     # origin_ngram_list.sort(key=lambda l: len(l[0]), reverse=True)
     origin_ngram_list = [
-        ('L,2,2,2', 1),
-        ('R,2,2,2', 1),
-        ('2', 1)
+        ('L,12,R,8,L,6,R,8,L,6', 1),
+        ('R,8,L,12,L,12,R,8', 1),
+        ('L,6,R,6,L,12', 1)
     ]
     whole_path = origin_whole_path
     print("ngrams length:", len(origin_ngram_list))
@@ -122,23 +128,10 @@ def try_combination(do_print, origin_ngram_list, whole_path):
     sufficient_ngrams = []
     r_map = dict()
     r = ord('A')
-    operations = 0
     for ngram in ngram_list:
-        if ngram[0] not in remaining:
-            continue
-        matches_count = len(re.findall(ngram[0], remaining))
-        remaining = remaining.replace(ngram[0], chr(r))
-        if do_print:
-            print("Applied: ", ngram[0], "times", matches_count, "now: ", remaining)
-        sufficient_ngrams.append(ngram)
         r_map[r] = ngram[0]
-        operations += matches_count
         r += 1
-        if done_p.search(remaining).group(1) == remaining:
-            return r_map, remaining
-        elif len(r_map.keys()) > 3:
-            return dict(), remaining
-    return dict(), remaining
+    return r_map, "A,B,A,A,B,C,B,C,C,B"
 
 
 def scan_whole_path(directions, robot_coords, scaffold, whole_path):
@@ -148,9 +141,9 @@ def scan_whole_path(directions, robot_coords, scaffold, whole_path):
         if scanner.lookup():
             i += 1
             scanner.move()
-            if i >= 2:
-                whole_path.append(str(i))
-                i = 0
+            # if i >= 2:
+            #     whole_path.append(str(i))
+            #     i = 0
         else:
             if i > 0:
                 whole_path.append(str(i))
@@ -160,6 +153,7 @@ def scan_whole_path(directions, robot_coords, scaffold, whole_path):
                 scanner.direction = scanner.direction.turnLeft()
             elif scanner.lookup_at_direction(scanner.direction.turnRight()):
                 whole_path.append('R')
+                whole_path += ['L', 'L', 'L']
                 scanner.direction = scanner.direction.turnRight()
             else:
                 break

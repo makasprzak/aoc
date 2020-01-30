@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="05cea938-2d19-4d95-a42c-707c9840251a" name="Default Changelist" comment="" />
+    <list default="true" id="05cea938-2d19-4d95-a42c-707c9840251a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day_18/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day_18/collect.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day_18/crawler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day_18/crawler_bak.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day_18/input.data" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day_18/keys.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day_18/test_file.data" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day_18/tree.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run_current.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coords.py" beforeDir="false" afterPath="$PROJECT_DIR$/coords.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day_17/ascii.py" beforeDir="false" afterPath="$PROJECT_DIR$/day_17/ascii.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stateful_intcode.py" beforeDir="false" afterPath="$PROJECT_DIR$/stateful_intcode.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,16 +33,21 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1URMKTW0aplPbQXy7fjFctgD1un" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JSON" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/day_14" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/day_18" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -47,17 +67,17 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/day_14" />
-      <recent name="$PROJECT_DIR$/day_12" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/day_9" />
-      <recent name="$PROJECT_DIR$/day_7" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/day_5" />
       <recent name="$PROJECT_DIR$/day_4" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/day_18" />
+      <recent name="$PROJECT_DIR$/day_14" />
+      <recent name="$PROJECT_DIR$/day_12" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/day_9" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -72,7 +92,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ascii">
+  <component name="RunManager" selected="Python.keys">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="AoC" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -99,6 +119,9 @@
       <module name="AoC" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day_17" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -136,19 +159,42 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test_calculate_digit.TestFft.test_calculate_digit" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="keys" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AoC" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day_16" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day_18" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_calculate_digit.TestFft.test_calculate_digit&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day_18/keys.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="run_current" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="AoC" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run_current.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <configuration name="Unittests for test_calculate_digit.TestFft.test_decode" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
@@ -166,28 +212,13 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test_calculate_digit.TestFft.test_improved" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="AoC" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day_16" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_calculate_digit.TestFft.test_improved&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.keys" />
+        <item itemvalue="Python.run_current" />
         <item itemvalue="Python.ascii" />
         <item itemvalue="Python.fft" />
         <item itemvalue="Python tests.Unittests for test_calculate_digit.TestFft.test_decode" />
-        <item itemvalue="Python tests.Unittests for test_calculate_digit.TestFft.test_improved" />
-        <item itemvalue="Python tests.Unittests for test_calculate_digit.TestFft.test_calculate_digit" />
       </list>
     </recent_temporary>
   </component>
@@ -219,12 +250,26 @@
       <workItem from="1576694691730" duration="5723000" />
       <workItem from="1576775788890" duration="19767000" />
       <workItem from="1576829485552" duration="607000" />
-      <workItem from="1577001500252" duration="9212000" />
+      <workItem from="1577001500252" duration="27850000" />
+      <workItem from="1577115533288" duration="44141000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -342,22 +387,21 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/day_17/ascii.py</url>
-          <line>110</line>
-          <option name="timeStamp" value="120" />
+          <line>86</line>
+          <option name="timeStamp" value="123" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/day_17/ascii.py</url>
-          <line>77</line>
-          <option name="timeStamp" value="122" />
+          <line>103</line>
+          <option name="timeStamp" value="124" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/day_18/collect.py</url>
+          <line>49</line>
+          <option name="timeStamp" value="145" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="PythonConfigurationType">
-        <watch expression="whole_path[a:a+1]" language="Python" />
-        <watch expression="whole_path[b:b+1]" language="Python" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/AoC$Unittests_for_test_coords_TestCoords_test_to_polar.coverage" NAME="Unittests for test_coords.TestCoords.test_to_polar Coverage Results" MODIFIED="1576006211624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day_10" />
@@ -366,7 +410,7 @@
     <SUITE FILE_PATH="coverage/AoC$moon.coverage" NAME="moon Coverage Results" MODIFIED="1576183702957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day_12" />
     <SUITE FILE_PATH="coverage/AoC$Unittests_for_test_get_combinations_TestGet_combinations_test_get_combinations_3.coverage" NAME="Unittests for test_get_combinations.TestGet_combinations.test_get_combinations_3 Coverage Results" MODIFIED="1575723424375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day_7" />
     <SUITE FILE_PATH="coverage/AoC$Unittests_for_test_intcode_TestIntcode.coverage" NAME="Unittests for test_intcode.TestIntcode Coverage Results" MODIFIED="1575868271466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day_9" />
-    <SUITE FILE_PATH="coverage/AoC$ascii.coverage" NAME="ascii Coverage Results" MODIFIED="1577009813312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day_17" />
+    <SUITE FILE_PATH="coverage/AoC$ascii.coverage" NAME="ascii Coverage Results" MODIFIED="1577017463845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day_17" />
     <SUITE FILE_PATH="coverage/AoC$Unittests_for_test_orbits_TestOrbits_test_run.coverage" NAME="Unittests for test_orbits.TestOrbits.test_run Coverage Results" MODIFIED="1575715372117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day_6" />
     <SUITE FILE_PATH="coverage/AoC$Unittests_for_test_crossed_wires_TestIntcode_test_merge.coverage" NAME="Unittests for test_crossed_wires.TestIntcode.test_merge Coverage Results" MODIFIED="1575398077895" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day_3" />
     <SUITE FILE_PATH="coverage/AoC$Unittests_for_test_crossed_wires_TestIntcode_test_deduplicate.coverage" NAME="Unittests for test_crossed_wires.TestIntcode.test_deduplicate Coverage Results" MODIFIED="1575407265259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day_3" />
@@ -375,6 +419,7 @@
     <SUITE FILE_PATH="coverage/AoC$Unittests_for_test_calculate_digit_TestFft_test_calculate_digit.coverage" NAME="Unittests for test_calculate_digit.TestFft.test_calculate_digit Coverage Results" MODIFIED="1576539453123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day_16" />
     <SUITE FILE_PATH="coverage/AoC$Unittests_for_test_crossed_wires_TestIntcode.coverage" NAME="Unittests for test_crossed_wires.TestIntcode Coverage Results" MODIFIED="1575408356780" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day_3" />
     <SUITE FILE_PATH="coverage/AoC$Unittests_for_test_parse_recipe_TestParseRecipe.coverage" NAME="Unittests for test_parse_recipe.TestParseRecipe Coverage Results" MODIFIED="1576315133890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day_14" />
+    <SUITE FILE_PATH="coverage/AoC$keys.coverage" NAME="keys Coverage Results" MODIFIED="1577194809795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day_18" />
     <SUITE FILE_PATH="coverage/AoC$Unittests_for_test_secure_container.coverage" NAME="Unittests for test_secure_container Coverage Results" MODIFIED="1575439435119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day_4" />
     <SUITE FILE_PATH="coverage/AoC$amps.coverage" NAME="amps Coverage Results" MODIFIED="1575725703809" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day_7" />
     <SUITE FILE_PATH="coverage/AoC$Unittests_for_test_calculate_digit_TestFft_test_decode.coverage" NAME="Unittests for test_calculate_digit.TestFft.test_decode Coverage Results" MODIFIED="1576621357774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day_16" />

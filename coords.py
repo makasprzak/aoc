@@ -24,6 +24,7 @@ class Coords:
     def __repr__(self):
         return self.__str__()
 
+
 class Direction(Coords):
     def turnLeft(self):
         if self.x == 0:
@@ -36,3 +37,31 @@ class Direction(Coords):
             return Direction(-self.y, self.x)
         else:
             return Direction(self.y, self.x)
+
+    @staticmethod
+    def up():
+        return Direction(0,-1)
+
+    @staticmethod
+    def down():
+        return Direction(0,1)
+
+    @staticmethod
+    def left():
+        return Direction(-1,0)
+
+    @staticmethod
+    def right():
+        return Direction(1, 0)
+
+    def __str__(self):
+        if self == Direction.up():
+            return 'up'
+        elif self == Direction.down():
+            return 'down'
+        elif self == Direction.left():
+            return 'left'
+        else:
+            return 'right'
+
+
